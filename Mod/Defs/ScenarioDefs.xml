@@ -82,7 +82,7 @@
         </li>
         <li Class="ScenPart_CreateIncident">
           <def>CreateIncident</def>
-          <incident>TelolRace_RefugeePodCrash</incident>
+          <incident>TelolRace_TelolJoinWalkIn</incident>
           <minDays>16</minDays>
           <maxDays>18</maxDays>
         </li>
@@ -127,7 +127,7 @@
         <!-- Config pages -->
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
           <def>ConfigurePawnsXenotypes</def>
-          <customSummary>Start with six Telol.</customSummary>
+          <customSummary>Start with one Telol.</customSummary>
           <pawnChoiceCount>1</pawnChoiceCount>
           <xenotypeCounts>
             <li>
@@ -186,7 +186,7 @@
         </li>
         <li Class="ScenPart_CreateIncident">
           <def>CreateIncident</def>
-          <incident>TelolRace_RefugeePodCrash</incident>
+          <incident>TelolRace_TelolJoinWalkIn</incident>
           <minDays>5</minDays>
           <maxDays>15</maxDays>
         </li>

@@ -7,7 +7,9 @@ namespace TelolRace
     {
         public override Pawn GeneratePawn()
         {
-            return TelolXenotypeHelper.GeneratePawn();
+            var pawn = TelolXenotypeHelper.GeneratePawn();
+            HealthUtility.DamageUntilDowned(pawn);
+            return pawn;
         }
     }
 }

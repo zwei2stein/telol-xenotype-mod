@@ -33,7 +33,7 @@
       <li>Firefighting</li>
     </workDisables>
     <skillGains>
-      <Research>2</Research>
+      <Intellectual>2</Intellectual>
       <Medicine>4</Medicine>
     </skillGains>
     <spawnCategories>
@@ -64,7 +64,7 @@
     <slot>Childhood</slot>
     <skillGains>
       <Animals>3</Animals>
-      <Research>3</Research>
+      <Intellectual>3</Intellectual>
       <Social>6</Social>
     </skillGains>
     <spawnCategories>
@@ -80,7 +80,7 @@
     <slot>Childhood</slot>
     <skillGains>
       <Shooting>3</Shooting>
-      <Medical>3</Medical>
+      <Medicine>3</Medicine>
       <Melee>6</Melee>
     </skillGains>
     <spawnCategories>
@@ -96,7 +96,7 @@
     <slot>Childhood</slot>
     <skillGains>
       <Shooting>6</Shooting>
-      <Medical>3</Medical>
+      <Medicine>3</Medicine>
       <Melee>2</Melee>
     </skillGains>
     <spawnCategories>

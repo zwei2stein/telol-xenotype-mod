@@ -11,10 +11,12 @@ namespace TelolRace
             var request = new PawnGenerationRequest(
                 PawnKindDefOf.Villager,
                 fixedIdeo: Faction.OfPlayer.ideos.PrimaryIdeo,
+                faction: Faction.OfPlayer,
                 forcedXenotype: TelolXenotypeDefOf.TelolRace_Telol,
                 //forceGenerateNewPawn: true,
                 colonistRelationChanceFactor: 20f,
                 allowPregnant: true,
+                forceNoGear: true,
                 forceRecruitable: true);
             if (Find.Storyteller.difficulty.ChildrenAllowed)
                 request.AllowedDevelopmentalStages |= DevelopmentalStage.Child;

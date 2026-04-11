@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>TelolXenotype_Nocturnal</defName>
+    <label>nocturnal</label>
+    <labelShortAdj>nocturnal</labelShortAdj>
+    <description>Carriers of this gene are adapted to nightime and being outdoors during night activates their predatory instincts.</description>
+    <iconPath>UI/Icons/Genes/Gene_TelolXenotype_Nocturnal</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <conditionalStatAffecters>
+      <li Class="TelolRace.ConditionalStatAffecter_InDarknessOutside">
+        <statOffsets>
+          <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+          <PlantWorkSpeed>0.25</PlantWorkSpeed>
+          <HuntingStealth>0.5</HuntingStealth>
+        </statOffsets>
+      </li>
+    </conditionalStatAffecters>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <forcedTraits>
+      <li>
+        <def>NightOwl</def>
+      </li>
+    </forcedTraits>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>night</symbol></li>
+        <li><symbol>dark</symbol></li>
+        <li><symbol>noct</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>prowl</symbol></li>
+        <li><symbol>hunt</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+
+  </GeneDef>
+
+</Defs>
