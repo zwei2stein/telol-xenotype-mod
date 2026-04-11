@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+    <defName>TelolRace_RefugeePodCrash</defName>
+    <label>seccond wave transport pod crash</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_GiveQuest</workerClass>
+    <questScriptDef>TelolRace_RefugeePodCrash</questScriptDef>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>TelolRace_TelolJoinWalkIn</defName>
+    <label>first wave straggler walks in</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_GiveQuest</workerClass>
+    <questScriptDef>TelolRace_TelolJoinWalkIn</questScriptDef>
+  </IncidentDef>
+
+</Defs>

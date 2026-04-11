@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+  <BackstoryDef>
+    <defName>VatChild01</defName>
+    <title>fire attack survivor</title>
+    <titleShort>medic</titleShort>
+    <description>[PAWN_nameDef] was released from growth when facility was attacked by foes using incendiary weapons. [PAWN_possessive] recovery process was slow, [PAWN_pronoun] passed time by making art. Staying so long in hospital lead to picking up a some knowledge of medicine. [PAWN_pronoun] was left with a crippling fear of fire.</description>
+    <slot>Childhood</slot>
+    <workDisables>
+      <li>Firefighting</li>
+    </workDisables>
+    <skillGains>
+      <Artistic>2</Artistic>
+      <Medicine>4</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+    <disallowedTraits>
+      <Pyromaniac/>
+    </disallowedTraits>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild02</defName>
+    <title>pod fire malfunction survivor</title>
+    <titleShort>medic</titleShort>
+    <description>[PAWN_possessive] growth pod malfuncioned and chaight fire. recovery process was slow, [PAWN_pronoun] passed time by reading books. Staying so long in hospital lead to picking up a some knowledge of medicine. [PAWN_pronoun] was left with a crippling fear of fire.</description>
+    <slot>Childhood</slot>
+    <workDisables>
+      <li>Firefighting</li>
+    </workDisables>
+    <skillGains>
+      <Research>2</Research>
+      <Medicine>4</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+    <disallowedTraits>
+      <Pyromaniac/>
+    </disallowedTraits>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild03</defName>
+    <title>low grade pod child</title>
+    <titleShort>undercooked</titleShort>
+    <description>[PAWN_possessive] growth pod was low quality. [PAWN_pronoun] did not get any special programming or skill implants</description>
+    <slot>Childhood</slot>
+    <skillGains/>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild04</defName>
+    <title>early released vat grown child</title>
+    <titleShort>early released</titleShort>
+    <description>[PAWN_possessive] growth pod was shut early as [PAWN_pronoun] was a control specimen. [PAWN_pronoun] got fairly normal childhood and varied education.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Animals>3</Animals>
+      <Research>3</Research>
+      <Social>6</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild05</defName>
+    <title>vat grown fighter</title>
+    <titleShort>fighter</titleShort>
+    <description>[PAWN_possessive] growth pod was set to grant [PAWN_pronoun] combat experience.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>3</Shooting>
+      <Medical>3</Medical>
+      <Melee>6</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild06</defName>
+    <title>vat grown fighter</title>
+    <titleShort>fighter</titleShort>
+    <description>[PAWN_possessive] growth pod was set to grant [PAWN_pronoun] combat experience.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Medical>3</Medical>
+      <Melee>2</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild07</defName>
+    <title>vat grown worker</title>
+    <titleShort>worker</titleShort>
+    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into menial worker.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Construction>6</Construction>
+      <Plants>3</Plants>
+      <Mining>2</Mining>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild08</defName>
+    <title>vat grown worker</title>
+    <titleShort>worker</titleShort>
+    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into menial worker.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Cooking>6</Cooking>
+      <Mining>3</Mining>
+      <Plants>2</Plants>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild09</defName>
+    <title>vat grown worker</title>
+    <titleShort>worker</titleShort>
+    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into menial worker.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Animals>6</Animals>
+      <Plants>3</Plants>
+      <Construction>2</Construction>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild10</defName>
+    <title>vat grown worker</title>
+    <titleShort>crafter</titleShort>
+    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into skilled worker.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Crafting>6</Crafting>
+      <Construction>3</Construction>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild11</defName>
+    <title>vat grown worker</title>
+    <titleShort>crafter</titleShort>
+    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into skilled worker.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Crafting>6</Crafting>
+      <Intellectual>3</Intellectual>
+      <Social>2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild12</defName>
+    <title>vat grown worker</title>
+    <titleShort>cook</titleShort>
+    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into cook.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Cooking>6</Cooking>
+      <Plants>3</Plants>
+      <Animals>2</Animals>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>VatChild13</defName>
+    <title>vat grown worker</title>
+    <titleShort>cook</titleShort>
+    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into cook.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Cooking>6</Cooking>
+      <Social>3</Social>
+      <Melee>2</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>TelolRace_TelolOrigin</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+
+</Defs>

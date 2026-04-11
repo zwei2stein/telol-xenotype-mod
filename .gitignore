@@ -1,0 +1,6 @@
+/Assemblies/*
+/Source/TelolRace/packages/*
+/Source/TelolRace/bin/*
+/Source/TelolRace/obj/*
+/Source/TelolRace/.idea/*
+Source/TelolRace/TelolRace.sln.DotSettings.user

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScenarioDef Name="CrashlandedTelol" ParentName="ScenarioBase">
+    <defName>TelolRace_TelolInfestation</defName>
+    <label>Telol tribe arrival</label>
+    <description>The six of you awake in your drop pods, about land on this unknown rimworld. You are to set up colony and oust others. You have minimal resources to do this. Except that you may be thousand years too late.</description>
+    <scenario>
+      <summary>Six naked colonists trying to survive and thrive.</summary>
+      <playerFaction>
+        <factionDef>TelolRace_PlayerTribeTelol</factionDef>
+      </playerFaction>
+      <parts>
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <customSummary>Start with six Telol.</customSummary>
+          <pawnChoiceCount>6</pawnChoiceCount>
+          <xenotypeCounts>
+            <li>
+              <xenotype>TelolRace_Telol</xenotype>
+              <count>6</count>
+              <description>Telol</description>
+              <requiredAtStart>true</requiredAtStart>
+              <allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages>
+            </li>
+          </xenotypeCounts>
+        </li>
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+          <visible>false</visible>
+        </li>
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_Naked">
+          <def>Naked</def>
+          <context>PlayerStarter</context>
+        </li>
+        <!-- Player pawns start with no possessions eg. extra drugs. -->
+        <li Class="ScenPart_NoPossessions">
+          <def>NoPossessions</def>
+        </li>
+        <!-- Player pawns modifiers -->
+        <li Class="ScenPart_ForcedHediff">
+          <def>ForcedHediff</def>
+          <visible>false</visible>
+          <context>PlayerStarter</context>
+          <chance>0.5</chance>
+          <hediff>CryptosleepSickness</hediff>
+          <hideOffMap>true</hideOffMap>
+          <severityRange>0~1</severityRange>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ShipChunk</thingDef>
+          <allowRoofed>false</allowRoofed>
+          <count>5</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>SmokeleafJoint</thingDef>
+          <allowRoofed>false</allowRoofed>
+          <count>6</count>
+        </li>
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Arrived with empty stomach and instinct to survive. You are here to stay. No-one can force you out.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_TelolJoinWalkIn</incident>
+          <minDays>3</minDays>
+          <maxDays>5</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_RefugeePodCrash</incident>
+          <minDays>12</minDays>
+          <maxDays>15</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_RefugeePodCrash</incident>
+          <minDays>16</minDays>
+          <maxDays>18</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_RefugeePodCrash</incident>
+          <minDays>19</minDays>
+          <maxDays>20</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_TelolJoinWalkIn</incident>
+          <minDays>30</minDays>
+          <maxDays>60</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_RefugeePodCrash</incident>
+          <minDays>60</minDays>
+          <maxDays>120</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_TelolJoinWalkIn</incident>
+          <minDays>120</minDays>
+          <maxDays>240</maxDays>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+ <ScenarioDef Name="CrashlandedTelolSolo" ParentName="ScenarioBase">
+    <defName>TelolRace_TelolInfestationSolo</defName>
+    <label>Telol solo arrival</label>
+    <description>You woke in your drop pod, about land on unknown rimworld. You are to set up colony and oust others. You have minimal resources to do this. You are alone. You are thousand years too late. Reinforcements might come.</description>
+    <scenario>
+      <summary>One naked Telol trying to survive and thrive.</summary>
+      <playerFaction>
+        <factionDef>TelolRace_PlayerTribeTelol</factionDef>
+      </playerFaction>
+      <parts>
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <customSummary>Start with six Telol.</customSummary>
+          <pawnChoiceCount>1</pawnChoiceCount>
+          <xenotypeCounts>
+            <li>
+              <xenotype>TelolRace_Telol</xenotype>
+              <count>1</count>
+              <description>Telol</description>
+              <requiredAtStart>true</requiredAtStart>
+              <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+            </li>
+          </xenotypeCounts>
+        </li>
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+          <visible>false</visible>
+        </li>
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_Naked">
+          <def>Naked</def>
+          <context>PlayerStarter</context>
+        </li>
+        <!-- Player pawns start with no possessions eg. extra drugs. -->
+        <li Class="ScenPart_NoPossessions">
+          <def>NoPossessions</def>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>ShipChunk</thingDef>
+          <allowRoofed>false</allowRoofed>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>SmokeleafJoint</thingDef>
+          <allowRoofed>false</allowRoofed>
+          <count>2</count>
+        </li>
+        <!-- Game start dialog -->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>Arrived with empty stomach and instinct to survive. You are here to stay. No-one can force you out.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_TelolJoinWalkIn</incident>
+          <minDays>1</minDays>
+          <maxDays>3</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_RefugeePodCrash</incident>
+          <minDays>2</minDays>
+          <maxDays>6</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_RefugeePodCrash</incident>
+          <minDays>5</minDays>
+          <maxDays>15</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_RefugeePodCrash</incident>
+          <minDays>10</minDays>
+          <maxDays>30</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_TelolJoinWalkIn</incident>
+          <minDays>15</minDays>
+          <maxDays>45</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_RefugeePodCrash</incident>
+          <minDays>45</minDays>
+          <maxDays>60</maxDays>
+        </li>
+        <li Class="ScenPart_CreateIncident">
+          <def>CreateIncident</def>
+          <incident>TelolRace_TelolJoinWalkIn</incident>
+          <minDays>45</minDays>
+          <maxDays>60</maxDays>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>

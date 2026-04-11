@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <QuestScriptDef>
+    <defName>TelolRace_RefugeePodCrash</defName>
+    <autoAccept>true</autoAccept>
+    <defaultHidden>true</defaultHidden>
+    <isRootSpecial>true</isRootSpecial>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName-&gt;Transport pod crash</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription-&gt;A transport pod crashes with a telol from seccond wave</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <!-- Handled by quest part -->
+    <root Class="TelolRace.QuestNode_Root_TelolPodCrash" />
+  </QuestScriptDef>
+
+  <QuestScriptDef>
+    <defName>TelolRace_TelolJoinWalkIn</defName>
+    <autoAccept>true</autoAccept>
+    <defaultHidden>true</defaultHidden>
+    <isRootSpecial>true</isRootSpecial>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName-&gt;A Telol wanderer</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription-&gt;A native Telol wanderer wants to join</li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <everAcceptableInSpace>true</everAcceptableInSpace>
+    <!-- Handled by quest part -->
+    <root Class="TelolRace.QuestNode_Root_TelolJoin_WalkIn" />
+  </QuestScriptDef>
+  
+</Defs>
