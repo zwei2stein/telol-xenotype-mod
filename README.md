@@ -1,7 +1,7 @@
 
 # Telol Xenotype Mod for Rimworld
 
-Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=>
+Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=3704807124>
 
 ## Quick about
 

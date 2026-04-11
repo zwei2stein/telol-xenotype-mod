@@ -2,7 +2,7 @@
 
 A tribal start focused custom xenotype.
 
-Suggested to be ran with "High Life" and "Prefered xenotype" ideologion precept .
+Suggested to be ran with "High Life" and "Prefered xenotype" ideologion precept.
 
 [h2]Features[/h2] 
 
@@ -10,6 +10,7 @@ Suggested to be ran with "High Life" and "Prefered xenotype" ideologion precept 
     [*]Telol xenotype, weak against fire, strong against nature.
     [*]Custom solo start with nated brutality+ (starts no research completed at all, even trial ones)
     [*]New faction featuring Telol race and selected factions having chance to have Telol members
+    [*]Nocturnal gene, Telol are hunting during night and sleeping during day.
 [/list]
 
 [hr][/hr]
