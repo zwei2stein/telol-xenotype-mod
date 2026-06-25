@@ -7,11 +7,17 @@
 		<description>These people arrived recently, but are spreading fast. They thrive well in wilderness and make good use of its resources.\n\nTheir numbers, and their hardiness are great asset in their quest to make more enemies than others would handle.\n\nThis tribe is closed off to outsiders, it may be difficult to turn them into an ally.</description>
 		<factionIconPath>World/WorldObjects/Expanding/TelolTribe</factionIconPath>
 
+    <factionNameMaker>TelolXenotype_NamerFactionTelol</factionNameMaker>
+    <settlementNameMaker>TelolXenotype_NamerSettlementTelol</settlementNameMaker>
+
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
 				<TelolRace_Telol>999</TelolRace_Telol>
 			</xenotypeChances>
 		</xenotypeSet>
+    <allowedCultures>
+      <li>TelolXenotype_Telolian</li>
+    </allowedCultures>
 
 		<structureMemeWeights>
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
@@ -31,7 +37,7 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
 		</disallowedMemes>
 
-		    <backstoryFilters>
+		<backstoryFilters>
       <li>
         <categories>
           <li>Tribal</li>
@@ -41,8 +47,6 @@
     </backstoryFilters>
 
 	</FactionDef>
-
-TelolRace_TelolOrigin
 
   <FactionDef ParentName="PlayerFactionBase">
     <defName>TelolRace_PlayerTribeTelol</defName>
@@ -54,15 +58,16 @@ TelolRace_TelolOrigin
     <pawnsPlural>tribespeople</pawnsPlural>
     <basicMemberKind>Tribesperson</basicMemberKind>
     <techLevel>Neolithic</techLevel>
-    <factionNameMaker>NamerFactionTribal</factionNameMaker>
-    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <factionNameMaker>TelolXenotype_NamerFactionTelol</factionNameMaker>
+    <settlementNameMaker>TelolXenotype_NamerSettlementTelol</settlementNameMaker>
     <allowedCultures>
-      <li>Corunan</li>
+      <li>TelolXenotype_Telolian</li>
     </allowedCultures>
     <backstoryFilters>
       <li>
         <categories>
           <li>Tribal</li>
+          <li>TelolRace_TelolOrigin</li>
         </categories>
       </li>
     </backstoryFilters>

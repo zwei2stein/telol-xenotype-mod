@@ -15,16 +15,17 @@
           <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
           <PlantWorkSpeed>0.25</PlantWorkSpeed>
           <HuntingStealth>0.5</HuntingStealth>
+          <MoveSpeed>0.1</MoveSpeed>
         </statOffsets>
       </li>
     </conditionalStatAffecters>
-    <biostatCpx>2</biostatCpx>
+    <biostatCpx>1</biostatCpx>
     <biostatMet>1</biostatMet>
     <forcedTraits>
       <li>
         <def>NightOwl</def>
       </li>
-    </forcedTraits>
+    </forcedTraits>    
     <symbolPack>
       <prefixSymbols>
         <li><symbol>night</symbol></li>
@@ -36,7 +37,34 @@
         <li><symbol>hunt</symbol></li>
       </suffixSymbols>
     </symbolPack>
+  </GeneDef>
 
+  <GeneDef>
+    <defName>TelolXenotype_CognitiveInjuryResponse</defName>
+    <label>congnitive injury response</label>
+    <labelShortAdj>injury response</labelShortAdj>
+    <description>When suffering catastrophical injury, hardcoded congnitive response activates and carrier of this gene adapts.</description>
+    <iconPath>UI/Icons/Genes/Gene_TelolXenotype_CognitiveInjuryResponse</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>60</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <customEffectDescriptions>
+      <li>Pernament injury has chance to grant beneficial survival related trait.</li>
+      <li>Traits considered: Nimble, Tough, Quick sleeper, Fast walker, Jogger, Steadfast, Iron-willed, Super-immune. (may include more if extended by mods)</li>
+    </customEffectDescriptions>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>evo</symbol></li>
+        <li><symbol>fit</symbol></li>
+        <li><symbol>adap</symbol></li>
+        <li><symbol>chan</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>hard</symbol></li>
+        <li><symbol>fix</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
   </GeneDef>
 
 </Defs>

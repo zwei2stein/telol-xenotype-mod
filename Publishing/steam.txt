@@ -10,7 +10,14 @@ Suggested to be ran with "High Life" and "Prefered xenotype" ideologion precept.
     [*]Telol xenotype, weak against fire, strong against nature.
     [*]Custom solo start with nated brutality+ (starts no research completed at all, even trial ones)
     [*]New faction featuring Telol race and selected factions having chance to have Telol members
+    [*]Custom naming scheme for Telol factions and pawns.
+[/list]
+
+[h3]Genes[/h3]
+
+[list]
     [*]Nocturnal gene, Telol are hunting during night and sleeping during day.
+    [*]Congnitive injury response gene, Telol are designed to adapt to survival situations.
 [/list]
 
 [hr][/hr]

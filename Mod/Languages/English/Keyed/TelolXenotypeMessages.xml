@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
+    <TelolXenotypeModName>Telol Xenotype</TelolXenotypeModName>
+
     <TelolXenotyps_StatsReport_InDarknessOutside>Outside in darkness</TelolXenotyps_StatsReport_InDarknessOutside>
-    
+
+    <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Title>{PAWN_labelShort} has gained a trait.</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Title>
+    <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text>{PAWN_labelShort} suffered permanent injury to {INJURY} and resulting trauma triggered a congnitive injury response, forcing adaptation by becoming {TRAIT}.</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text>
+
+    <TelolXenotype_ProgressionSpeed_SECOND>Seccond</TelolXenotype_ProgressionSpeed_SECOND>
+    <TelolXenotype_ProgressionSpeed_DAY>Day (default)</TelolXenotype_ProgressionSpeed_DAY>
+    <TelolXenotype_ProgressionSpeed_QUADRUM>Quadrum</TelolXenotype_ProgressionSpeed_QUADRUM>
+    <TelolXenotype_ProgressionSpeed_YEAR>Year</TelolXenotype_ProgressionSpeed_YEAR>
+
+    <TelolXenotype_Settings_Genes_Label>Genes</TelolXenotype_Settings_Genes_Label>
+
+    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Label>Cognitive injury response</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Label>
+    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Cooldown>Trait application cooldown</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Cooldown>
+    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance>Trait application chance</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance>
+    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance_Tooltip>Chance that pernament injury will result in trait. Default: 100%.</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance_Tooltip>
+    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits>Maxmimum traits from this gene</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits>
+    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits_Tooltip>Limits amount of traits that this gene will grant to pawn. Default: 3.</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits_Tooltip>
+
 </LanguageData>

@@ -15,6 +15,8 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=370
 
 ![](/Publishing/04_nocturnal.png)
 
+![](/Publishing/05_response.png)
+
 ## License
 
 All original artwork included is Copyright © 2027 Petr Prokop, and distributed under the Creative Commons License Attribution-ShareAlike 4.0 International, or CC-BY-SA 4.0I.

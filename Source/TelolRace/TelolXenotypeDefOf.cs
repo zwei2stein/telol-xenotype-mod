@@ -1,4 +1,5 @@
 using RimWorld;
+using Verse;
 
 namespace TelolRace
 {
@@ -6,6 +7,8 @@ namespace TelolRace
     public static class TelolXenotypeDefOf
     {
         public static XenotypeDef TelolRace_Telol;
+
+        public static GeneDef TelolXenotype_CognitiveInjuryResponse;
 
         static TelolXenotypeDefOf()
         {

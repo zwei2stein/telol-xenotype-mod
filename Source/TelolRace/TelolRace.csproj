@@ -33,6 +33,10 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="0Harmony, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>packages\Lib.Harmony.2.4.2\lib\net472\0Harmony.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
         <Reference Include="Assembly-CSharp">
             <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
             <Private>False</Private>
@@ -45,14 +49,31 @@
             <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
             <Private>False</Private>
         </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+          <Private>False</Private>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="CompProperties_Gene_CognitiveInjuryResponse.cs" />
         <Compile Include="ConditionalStatAffecter_InDarknessOutside.cs" />
+        <Compile Include="HarmonyPatches.cs" />
+        <Compile Include="ProgressionSpeed.cs" />
+        <Compile Include="TelolMod.cs" />
         <Compile Include="TelolXenotypeHelper.cs"/>
         <Compile Include="TelolXenotypeDefOf.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
         <Compile Include="QuestNode_Root_TelolJoin_WalkIn.cs"/>
         <Compile Include="QuestNode_Root_TelolPodCrash.cs"/>
+        <Compile Include="CognitiveInjuryResponseExtension.cs" />
+        <Compile Include="TelolXenotypeModSettings.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

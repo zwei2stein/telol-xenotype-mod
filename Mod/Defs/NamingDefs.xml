@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <CultureDef>
+    <defName>TelolXenotype_Telolian</defName>
+    <label>telolian</label>
+    <description>Culture common among rimworld telol tribes.</description>
+    <pawnNameMaker>TelolXenotype_NamerPersonTelol</pawnNameMaker>
+    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
+    <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
+    <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerCorunan</deityTypeMaker>
+    <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalCorunan</festivalNameMaker>
+    <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Corunan</leaderTitleMaker>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/WorldObjects/Expanding/Village</iconPath>
+    <preferredWeaponClasses>
+      <noble>Neolithic</noble>
+      <despised>Ultratech</despised>
+    </preferredWeaponClasses>
+    <thingStyleCategories>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <category>Totemic</category>
+        <priority>2</priority>
+      </li>
+    </thingStyleCategories>
+    <styleItemTags>
+      <li>
+        <tag>Tribal</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardTribal</tag>
+        <baseWeight>0.3</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>TattooFaceTribal</tag>
+        <baseWeight>0.4</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>TattooBodyTribal</tag>
+        <baseWeight>0.4</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoTattoo</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+  <RulePackDef>
+    <defName>TelolXenotype_NamerPersonTelol</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=2)->[personal_names] [personal_names]</li>
+        <li>r_name->[TerrainFeatures] [personal_names]</li>
+        <li>r_name->[ColorBadass] [personal_names]</li>
+        <li>r_name->[personal_names] '[TerrainFeatures]' [personal_names]</li>
+        <li>r_name->[personal_names] '[ColorBadass]' [personal_names]</li>
+        <li>r_name->[personal_names] '[Bodyparts]' [personal_names]</li>
+        <li>r_name->[personal_names] '[NaturalObject]' [personal_names]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>personal_names->NameBanks/TelolXenotype_AllNames</li>
+        <li>ColorBadass->Words/Nouns/Colors_Badass</li>
+        <li>TerrainFeatures->Words/Nouns/TerrainFeatures</li>
+        <li>Bodyparts->Words/Nouns/Bodyparts</li>
+        <li>NaturalObject->Words/Nouns/NaturalObject</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>TelolXenotype_NamerFactionTelol</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[nameCore] [political_union_tribal]</li>
+        <li>r_name->[political_union_tribal] of [nameCore]</li>
+
+        <li>nameCore->[concepts_badass]-[concepts_positive]</li>
+        <li>nameCore->[concepts_badass] &amp; [concepts_positive]</li>
+        <li>nameCore->[concepts_positive] with [concepts_badass]</li>
+
+      </rulesStrings>
+      <rulesFiles>
+        <li>political_union_tribal->Words/Nouns/PoliticalUnions_Tribal</li>
+        <li>concepts_badass->Words/Nouns/Concepts_Badass</li>
+        <li>concepts_positive->Words/Nouns/Concepts_Positive</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+
+  <RulePackDef>
+    <defName>TelolXenotype_NamerSettlementTelol</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[townname_wordgen]</li>
+
+        <li>townname_wordgen->[concepts_badass] of [personal_names]</li>
+        <li>townname_wordgen->[concepts_positive] of [personal_names]</li>
+        <li>townname_wordgen->[personal_names]'s [concepts_badass]</li>
+        <li>townname_wordgen->[personal_names]'s [concepts_positive]</li>
+        <li>townname_wordgen->[personal_names]'s [Bodyparts]</li>
+
+      </rulesStrings>
+      <rulesFiles>
+        <li>concepts_badass->Words/Nouns/Concepts_Badass</li>
+        <li>concepts_positive->Words/Nouns/Concepts_Positive</li>
+        <li>personal_names->NameBanks/TelolXenotype_AllNames</li>
+        <li>Bodyparts->Words/Nouns/Bodyparts</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+
+</Defs>
