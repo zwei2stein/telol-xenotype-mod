@@ -13,7 +13,7 @@ namespace TelolRace
 
         public Hediff_Injury Injury { get; }
 
-        public PawnInjuryData(ref Pawn pawn, ref Hediff_Injury injury)
+        public PawnInjuryData(Pawn pawn, Hediff_Injury injury)
         {
             Pawn = pawn;
             Injury = injury;
@@ -31,7 +31,7 @@ namespace TelolRace
     {
         public static void Prefix(ref Pawn pawn, ref Hediff_Injury injury, out PawnInjuryData __state)
         {
-            __state = new PawnInjuryData(ref pawn, ref injury);
+            __state = new PawnInjuryData(pawn, injury);
         }
 
         public static void Postfix(PawnInjuryData __state)
@@ -43,6 +43,9 @@ namespace TelolRace
 
             if (pawn.TryGetComp<Gene_CognitiveInjuryResponse>(out var response))
             {
+                if (response == null)
+                    return;
+                
                 //Log.Message("[TelolXenotype] response.lastTriggerTick=" + response.lastTriggerTick);
                 //Log.Message("[TelolXenotype] Find.TickManager.TicksGame=" + Find.TickManager.TicksGame );
                 //cooldown between injury responses.
@@ -75,44 +78,17 @@ namespace TelolRace
             {
                 
                 var permanentInjury = pawn.health.hediffSet.GetPartHealth(injury.Part) <= 0f;
-                var hediffCompPermanent = HediffUtility.TryGetComp<HediffComp_GetsPermanent>((Hediff)(object)injury);
+                var hediffCompPermanent = HediffUtility.TryGetComp<HediffComp_GetsPermanent>(injury);
                 if (hediffCompPermanent != null)
                 {
                     permanentInjury = permanentInjury || hediffCompPermanent.IsPermanent;
                 }
 
-                permanentInjury = permanentInjury || HediffUtility.IsPermanent((Hediff)(object)injury);
+                permanentInjury = permanentInjury || HediffUtility.IsPermanent(injury);
 
                 if (permanentInjury)
                 {
-                    var candidateTraits = new List<Trait>();
-
-                    foreach (var traitDef in DefDatabase<TraitDef>.AllDefs)
-                    {
-                        
-                        var extension = traitDef.GetModExtension<CognitiveInjuryResponseExtension>();
-                        if (extension == null)
-                            continue;
-
-                        if (pawn.story.traits.HasTrait(traitDef))
-                            continue;
-
-                        if (traitDef.degreeDatas.Count > 1)
-                        {
-                            foreach (var degreeData in traitDef.degreeDatas)
-                            {
-                                if (degreeData.degree <= extension.degreeMax &&
-                                    degreeData.degree >= extension.degreeMin)
-                                {
-                                    candidateTraits.Add(new Trait(traitDef, degreeData.degree));
-                                }
-                            }
-                        }
-                        else
-                        {
-                            candidateTraits.Add(new Trait(traitDef));
-                        }
-                    }
+                    var candidateTraits = CognitiveInjuryResponseCache.GetCandidateTraits(pawn);
 
                     if (candidateTraits.Count > 0)
                     {

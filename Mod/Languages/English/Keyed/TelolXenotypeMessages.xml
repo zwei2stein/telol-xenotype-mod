@@ -3,7 +3,7 @@
 
     <TelolXenotypeModName>Telol Xenotype</TelolXenotypeModName>
 
-    <TelolXenotyps_StatsReport_InDarknessOutside>Outside in darkness</TelolXenotyps_StatsReport_InDarknessOutside>
+    <TelolXenotype_StatsReport_InDarknessOutside>Outside in darkness</TelolXenotype_StatsReport_InDarknessOutside>
 
     <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Title>{PAWN_labelShort} has gained a trait.</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Title>
     <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text>{PAWN_labelShort} suffered permanent injury to {INJURY} and resulting trauma triggered a cognitive injury response, forcing adaptation by becoming {TRAIT}.</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text>

@@ -10,8 +10,8 @@ namespace TelolRace
         {
             var request = new PawnGenerationRequest(
                 PawnKindDefOf.Villager,
-                fixedIdeo: Faction.OfPlayer.ideos.PrimaryIdeo,
-                faction: Faction.OfPlayer,
+                fixedIdeo: Faction.OfPlayer?.ideos?.PrimaryIdeo,
+                faction: Faction.OfPlayer ?? Faction.OfPlayerSilentFail,
                 forcedXenotype: TelolXenotypeDefOf.TelolRace_Telol,
                 //forceGenerateNewPawn: true,
                 colonistRelationChanceFactor: 20f,
