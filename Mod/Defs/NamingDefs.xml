@@ -4,7 +4,7 @@
   <CultureDef>
     <defName>TelolXenotype_Telolian</defName>
     <label>telolian</label>
-    <description>Culture common among rimworld telol tribes.</description>
+    <description>Culture common among RimWorld Telol tribes.</description>
     <pawnNameMaker>TelolXenotype_NamerPersonTelol</pawnNameMaker>
     <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoCorunan</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityCorunan</deityNameMaker>
@@ -101,7 +101,6 @@
     </rulePack>
   </RulePackDef>
 
-
   <RulePackDef>
     <defName>TelolXenotype_NamerSettlementTelol</defName>
     <rulePack>
@@ -123,6 +122,5 @@
       </rulesFiles>
     </rulePack>
   </RulePackDef>
-
 
 </Defs>

@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="TribeRoughBase">
-		<defName>TelolRace_TelolTribeRough</defName>
-		<label>telol settler tribe</label>
-		<description>These people arrived recently, but are spreading fast. They thrive well in wilderness and make good use of its resources.\n\nTheir numbers, and their hardiness are great asset in their quest to make more enemies than others would handle.\n\nThis tribe is closed off to outsiders, it may be difficult to turn them into an ally.</description>
-		<factionIconPath>World/WorldObjects/Expanding/TelolTribe</factionIconPath>
+    <FactionDef ParentName="TribeRoughBase">
+        <defName>TelolRace_TelolTribeRough</defName>
+        <label>telol settler tribe</label>
+        <description>These people arrived recently, but are spreading fast. They thrive in the wilderness and make good use of its resources.\n\nTheir numbers and their hardiness are a great asset in their quest to create more enemies than others can handle.\n\nThis tribe is closed off to outsiders; it may be difficult to turn them into an ally.</description>
+        <factionIconPath>World/WorldObjects/Expanding/TelolTribe</factionIconPath>
 
-    <factionNameMaker>TelolXenotype_NamerFactionTelol</factionNameMaker>
-    <settlementNameMaker>TelolXenotype_NamerSettlementTelol</settlementNameMaker>
+        <factionNameMaker>TelolXenotype_NamerFactionTelol</factionNameMaker>
+        <settlementNameMaker>TelolXenotype_NamerSettlementTelol</settlementNameMaker>
 
-		<xenotypeSet Inherit="False">
-			<xenotypeChances>
-				<TelolRace_Telol>999</TelolRace_Telol>
-			</xenotypeChances>
-		</xenotypeSet>
-    <allowedCultures>
-      <li>TelolXenotype_Telolian</li>
-    </allowedCultures>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <TelolRace_Telol>999</TelolRace_Telol>
+            </xenotypeChances>
+        </xenotypeSet>
+        <allowedCultures>
+            <li>TelolXenotype_Telolian</li>
+        </allowedCultures>
 
-		<structureMemeWeights>
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
-			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">5</Structure_OriginBuddhist>
-		</structureMemeWeights>
+        <structureMemeWeights>
+            <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+            <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+            <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">5</Structure_OriginBuddhist>
+        </structureMemeWeights>
 
-		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
-		</requiredMemes>
-		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
-		</disallowedMemes>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+        </requiredMemes>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+        </disallowedMemes>
 
-		<backstoryFilters>
-      <li>
-        <categories>
-          <li>Tribal</li>
-          <li>TelolRace_TelolOrigin</li>
-        </categories>
-      </li>
-    </backstoryFilters>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Tribal</li>
+                    <li>TelolRace_TelolOrigin</li>
+                </categories>
+            </li>
+        </backstoryFilters>
 
-	</FactionDef>
+    </FactionDef>
 
-  <FactionDef ParentName="PlayerFactionBase">
-    <defName>TelolRace_PlayerTribeTelol</defName>
-    <label>New Tribe</label>
-    <description>A small telol tribe.</description>
-    <isPlayer>true</isPlayer>
-    <categoryTag>Tribal</categoryTag>
-    <pawnSingular>tribesman</pawnSingular>
-    <pawnsPlural>tribespeople</pawnsPlural>
-    <basicMemberKind>Tribesperson</basicMemberKind>
-    <techLevel>Neolithic</techLevel>
-    <factionNameMaker>TelolXenotype_NamerFactionTelol</factionNameMaker>
-    <settlementNameMaker>TelolXenotype_NamerSettlementTelol</settlementNameMaker>
-    <allowedCultures>
-      <li>TelolXenotype_Telolian</li>
-    </allowedCultures>
-    <backstoryFilters>
-      <li>
-        <categories>
-          <li>Tribal</li>
-          <li>TelolRace_TelolOrigin</li>
-        </categories>
-      </li>
-    </backstoryFilters>
-    <factionIconPath>World/WorldObjects/Expanding/TelolTribePlayer</factionIconPath>
-    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-    <forageabilityFactor>1.7</forageabilityFactor>
-    <startingResearchTags>
-    </startingResearchTags>
-    <startingTechprintsResearchTags>
-      <li>TribalStart</li>
-      <li>TribalStartTechprints</li>
-    </startingTechprintsResearchTags>
-    <apparelStuffFilter>
-      <thingDefs>
-        <li>Cloth</li>
-      </thingDefs>
-    </apparelStuffFilter>
-    <recipePrerequisiteTags>
-      <li>Tribal</li>
-    </recipePrerequisiteTags>
-  </FactionDef>
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>TelolRace_PlayerTribeTelol</defName>
+        <label>New Tribe</label>
+        <description>A small Telol tribe.</description>
+        <isPlayer>true</isPlayer>
+        <categoryTag>Tribal</categoryTag>
+        <pawnSingular>tribesman</pawnSingular>
+        <pawnsPlural>tribespeople</pawnsPlural>
+        <basicMemberKind>Tribesperson</basicMemberKind>
+        <techLevel>Neolithic</techLevel>
+        <factionNameMaker>TelolXenotype_NamerFactionTelol</factionNameMaker>
+        <settlementNameMaker>TelolXenotype_NamerSettlementTelol</settlementNameMaker>
+        <allowedCultures>
+            <li>TelolXenotype_Telolian</li>
+        </allowedCultures>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Tribal</li>
+                    <li>TelolRace_TelolOrigin</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <factionIconPath>World/WorldObjects/Expanding/TelolTribePlayer</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+        <forageabilityFactor>1.7</forageabilityFactor>
+        <startingResearchTags>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>TribalStart</li>
+            <li>TribalStartTechprints</li>
+        </startingTechprintsResearchTags>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Cloth</li>
+            </thingDefs>
+        </apparelStuffFilter>
+        <recipePrerequisiteTags>
+            <li>Tribal</li>
+        </recipePrerequisiteTags>
+    </FactionDef>
 
 </Defs>

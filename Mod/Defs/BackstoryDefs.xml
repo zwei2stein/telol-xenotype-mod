@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	
   <BackstoryDef>
     <defName>VatChild01</defName>
     <title>fire attack survivor</title>
     <titleShort>medic</titleShort>
-    <description>[PAWN_nameDef] was released from growth when facility was attacked by foes using incendiary weapons. [PAWN_possessive] recovery process was slow, [PAWN_pronoun] passed time by making art. Staying so long in hospital lead to picking up a some knowledge of medicine. [PAWN_pronoun] was left with a crippling fear of fire.</description>
+    <description>[PAWN_nameDef] was released from their growth pod when the facility was attacked by foes using incendiary weapons. [PAWN_possessive] recovery process was slow; [PAWN_pronoun] passed time by making art. Staying so long in hospital led to picking up some knowledge of medicine. [PAWN_pronoun] was left with a crippling fear of fire.</description>
     <slot>Childhood</slot>
     <workDisables>
       <li>Firefighting</li>
@@ -27,7 +26,7 @@
     <defName>VatChild02</defName>
     <title>pod fire malfunction survivor</title>
     <titleShort>medic</titleShort>
-    <description>[PAWN_possessive] growth pod malfuncioned and chaight fire. recovery process was slow, [PAWN_pronoun] passed time by reading books. Staying so long in hospital lead to picking up a some knowledge of medicine. [PAWN_pronoun] was left with a crippling fear of fire.</description>
+    <description>[PAWN_possessive] growth pod malfunctioned and caught fire. The recovery process was slow; [PAWN_pronoun] passed time by reading books. Staying so long in hospital led to picking up some knowledge of medicine. [PAWN_pronoun] was left with a crippling fear of fire.</description>
     <slot>Childhood</slot>
     <workDisables>
       <li>Firefighting</li>
@@ -46,9 +45,9 @@
 
   <BackstoryDef>
     <defName>VatChild03</defName>
-    <title>low grade pod child</title>
+    <title>low-grade pod child</title>
     <titleShort>undercooked</titleShort>
-    <description>[PAWN_possessive] growth pod was low quality. [PAWN_pronoun] did not get any special programming or skill implants</description>
+    <description>[PAWN_possessive] growth pod was low quality. [PAWN_pronoun] did not get any special programming or skill implants.</description>
     <slot>Childhood</slot>
     <skillGains/>
     <spawnCategories>
@@ -58,9 +57,9 @@
 
   <BackstoryDef>
     <defName>VatChild04</defName>
-    <title>early released vat grown child</title>
+    <title>early-released vat-grown child</title>
     <titleShort>early released</titleShort>
-    <description>[PAWN_possessive] growth pod was shut early as [PAWN_pronoun] was a control specimen. [PAWN_pronoun] got fairly normal childhood and varied education.</description>
+    <description>[PAWN_possessive] growth pod was shut down early as [PAWN_pronoun] was a control specimen. [PAWN_pronoun] had a fairly normal childhood and varied education.</description>
     <slot>Childhood</slot>
     <skillGains>
       <Animals>3</Animals>
@@ -74,7 +73,7 @@
 
   <BackstoryDef>
     <defName>VatChild05</defName>
-    <title>vat grown fighter</title>
+    <title>vat-grown fighter</title>
     <titleShort>fighter</titleShort>
     <description>[PAWN_possessive] growth pod was set to grant [PAWN_pronoun] combat experience.</description>
     <slot>Childhood</slot>
@@ -90,7 +89,7 @@
 
   <BackstoryDef>
     <defName>VatChild06</defName>
-    <title>vat grown fighter</title>
+    <title>vat-grown fighter</title>
     <titleShort>fighter</titleShort>
     <description>[PAWN_possessive] growth pod was set to grant [PAWN_pronoun] combat experience.</description>
     <slot>Childhood</slot>
@@ -106,9 +105,9 @@
 
   <BackstoryDef>
     <defName>VatChild07</defName>
-    <title>vat grown worker</title>
+    <title>vat-grown worker</title>
     <titleShort>worker</titleShort>
-    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into menial worker.</description>
+    <description>[PAWN_possessive] growth pod was set to make [PAWN_pronoun] into a menial worker.</description>
     <slot>Childhood</slot>
     <skillGains>
       <Construction>6</Construction>
@@ -122,9 +121,9 @@
 
   <BackstoryDef>
     <defName>VatChild08</defName>
-    <title>vat grown worker</title>
+    <title>vat-grown worker</title>
     <titleShort>worker</titleShort>
-    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into menial worker.</description>
+    <description>[PAWN_possessive] growth pod was set to make [PAWN_pronoun] into a menial worker.</description>
     <slot>Childhood</slot>
     <skillGains>
       <Cooking>6</Cooking>
@@ -138,9 +137,9 @@
 
   <BackstoryDef>
     <defName>VatChild09</defName>
-    <title>vat grown worker</title>
+    <title>vat-grown worker</title>
     <titleShort>worker</titleShort>
-    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into menial worker.</description>
+    <description>[PAWN_possessive] growth pod was set to make [PAWN_pronoun] into a menial worker.</description>
     <slot>Childhood</slot>
     <skillGains>
       <Animals>6</Animals>
@@ -154,9 +153,9 @@
 
   <BackstoryDef>
     <defName>VatChild10</defName>
-    <title>vat grown worker</title>
+    <title>vat-grown worker</title>
     <titleShort>crafter</titleShort>
-    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into skilled worker.</description>
+    <description>[PAWN_possessive] growth pod was set to make [PAWN_pronoun] into a skilled worker.</description>
     <slot>Childhood</slot>
     <skillGains>
       <Crafting>6</Crafting>
@@ -170,9 +169,9 @@
 
   <BackstoryDef>
     <defName>VatChild11</defName>
-    <title>vat grown worker</title>
+    <title>vat-grown worker</title>
     <titleShort>crafter</titleShort>
-    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into skilled worker.</description>
+    <description>[PAWN_possessive] growth pod was set to make [PAWN_pronoun] into a skilled worker.</description>
     <slot>Childhood</slot>
     <skillGains>
       <Crafting>6</Crafting>
@@ -186,9 +185,9 @@
 
   <BackstoryDef>
     <defName>VatChild12</defName>
-    <title>vat grown worker</title>
+    <title>vat-grown worker</title>
     <titleShort>cook</titleShort>
-    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into cook.</description>
+    <description>[PAWN_possessive] growth pod was set to make [PAWN_pronoun] into a cook.</description>
     <slot>Childhood</slot>
     <skillGains>
       <Cooking>6</Cooking>
@@ -202,9 +201,9 @@
 
   <BackstoryDef>
     <defName>VatChild13</defName>
-    <title>vat grown worker</title>
+    <title>vat-grown worker</title>
     <titleShort>cook</titleShort>
-    <description>[PAWN_possessive] growth pod was set make [PAWN_pronoun] into cook.</description>
+    <description>[PAWN_possessive] growth pod was set to make [PAWN_pronoun] into a cook.</description>
     <slot>Childhood</slot>
     <skillGains>
       <Cooking>6</Cooking>
@@ -215,6 +214,5 @@
       <li>TelolRace_TelolOrigin</li>
     </spawnCategories>
   </BackstoryDef>
-
 
 </Defs>

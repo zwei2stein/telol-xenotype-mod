@@ -1,41 +1,41 @@
-[h1]Telol xenotype mod[/h1]
+[h1]Telol Xenotype Mod[/h1]
 
-A tribal start focused custom xenotype.
+A tribal-focused custom xenotype.
 
-Suggested to be ran with "High Life" and "Prefered xenotype" ideologion precept.
+Suggested to be run with "High Life" and "Preferred Xenotype" ideologion precept.
 
-[h2]Features[/h2] 
+[h2]Features[/h2]
 
 [list]
-    [*]Telol xenotype, weak against fire, strong against nature.
-    [*]Custom solo start with nated brutality+ (starts no research completed at all, even trial ones)
-    [*]New faction featuring Telol race and selected factions having chance to have Telol members
-    [*]Custom naming scheme for Telol factions and pawns.
+    [*]Telol xenotype: weak against fire, strong against nature.
+    [*]Custom solo start with Naked Brutality+ (starts with no research completed, not even tribal ones)
+    [*]New faction featuring the Telol race, with selected factions having a chance to include Telol members
+    [*]Custom naming schemes for Telol factions and pawns.
 [/list]
 
 [h3]Genes[/h3]
 
 [list]
-    [*]Nocturnal gene, Telol are hunting during night and sleeping during day.
-    [*]Congnitive injury response gene, Telol are designed to adapt to survival situations.
+    [*]Nocturnal gene: the Telol hunt at night and sleep during the day.
+    [*]Cognitive injury response gene: the Telol are designed to adapt to survival situations.
 [/list]
 
 [hr][/hr]
 
-[h2]Why[/h2] 
+[h2]Why[/h2]
 
-I was annoyed that custom xenotype you make for starting pawns is not being integrated to game at all - the ones you start with are all that you have. No recruitable prisoners, no factions, nothing.
+I was annoyed that custom xenotype you make for starting pawns is not integrated into the game at all - the ones you start with are all you get. No recruitable prisoners, no factions - nothing.
 
-So I made this mod to do so. Feel free to clone it for your own xenotype.
+So I made this mod to fix that. Feel free to clone it for your own xenotype.
 
 [hr][/hr]
 
-[url=https://github.com/zwei2stein/telol-xenotype-mod] source code [/url] 
+[url=https://github.com/zwei2stein/telol-xenotype-mod]Source Code[/url]
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3651274426] my other mods [/url] 
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3651274426]My Other Mods[/url]
 
 [hr][/hr]
 
 [h2]Thanks[/h2]
 
-A lot of thanks to rimworld modding discord for help.
+Many thanks to the RimWorld Modding Discord for their help.

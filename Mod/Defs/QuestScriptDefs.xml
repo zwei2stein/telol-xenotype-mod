@@ -13,7 +13,7 @@
     </questNameRules>
     <questDescriptionRules>
       <rulesStrings>
-        <li>questDescription-&gt;A transport pod crashes with a telol from seccond wave</li>
+        <li>questDescription-&gt;A transport pod crashes with a Telol from second wave</li>
       </rulesStrings>
     </questDescriptionRules>
     <everAcceptableInSpace>true</everAcceptableInSpace>
@@ -40,5 +40,5 @@
     <!-- Handled by quest part -->
     <root Class="TelolRace.QuestNode_Root_TelolJoin_WalkIn" />
   </QuestScriptDef>
-  
+
 </Defs>

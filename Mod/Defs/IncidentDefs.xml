@@ -3,7 +3,7 @@
 
   <IncidentDef>
     <defName>TelolRace_RefugeePodCrash</defName>
-    <label>seccond wave transport pod crash</label>
+    <label>second wave transport pod crash</label>
     <category>Misc</category>
     <targetTags>
       <li>Map_PlayerHome</li>

@@ -3,7 +3,7 @@
   <ScenarioDef Name="CrashlandedTelol" ParentName="ScenarioBase">
     <defName>TelolRace_TelolInfestation</defName>
     <label>Telol tribe arrival</label>
-    <description>The six of you awake in your drop pods, about land on this unknown rimworld. You are to set up colony and oust others. You have minimal resources to do this. Except that you may be thousand years too late.</description>
+    <description>The six of you awake in your drop pods, about to land on this unknown RimWorld. You are to set up a colony and outcompete others. You have minimal resources to do this. Except that you may be a thousand years too late.</description>
     <scenario>
       <summary>Six naked colonists trying to survive and thrive.</summary>
       <playerFaction>
@@ -65,7 +65,7 @@
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>Arrived with empty stomach and instinct to survive. You are here to stay. No-one can force you out.</text>
+          <text>Arrived with an empty stomach and instinct to survive. You are here to stay. No one can force you out.</text>
           <closeSound>GameStartSting</closeSound>
         </li>
         <li Class="ScenPart_CreateIncident">
@@ -114,10 +114,10 @@
     </scenario>
   </ScenarioDef>
 
- <ScenarioDef Name="CrashlandedTelolSolo" ParentName="ScenarioBase">
+  <ScenarioDef Name="CrashlandedTelolSolo" ParentName="ScenarioBase">
     <defName>TelolRace_TelolInfestationSolo</defName>
     <label>Telol solo arrival</label>
-    <description>You woke in your drop pod, about land on unknown rimworld. You are to set up colony and oust others. You have minimal resources to do this. You are alone. You are thousand years too late. Reinforcements might come.</description>
+    <description>You woke in your drop pod, about to land on an unknown RimWorld. You are to set up a colony and outcompete others. You have minimal resources to do this. You are alone. You are a thousand years too late. Reinforcements might come.</description>
     <scenario>
       <summary>One naked Telol trying to survive and thrive.</summary>
       <playerFaction>
@@ -169,7 +169,7 @@
         <!-- Game start dialog -->
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>Arrived with empty stomach and instinct to survive. You are here to stay. No-one can force you out.</text>
+          <text>Arrived with an empty stomach and instinct to survive. You are here to stay. No one can force you out.</text>
           <closeSound>GameStartSting</closeSound>
         </li>
         <li Class="ScenPart_CreateIncident">

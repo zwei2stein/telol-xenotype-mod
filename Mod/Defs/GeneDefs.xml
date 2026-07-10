@@ -5,7 +5,7 @@
     <defName>TelolXenotype_Nocturnal</defName>
     <label>nocturnal</label>
     <labelShortAdj>nocturnal</labelShortAdj>
-    <description>Carriers of this gene are adapted to nightime and being outdoors during night activates their predatory instincts.</description>
+    <description>Carriers of this gene are adapted to nighttime and being outdoors during night activates their predatory instincts.</description>
     <iconPath>UI/Icons/Genes/Gene_TelolXenotype_Nocturnal</iconPath>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>60</displayOrderInCategory>
@@ -25,7 +25,7 @@
       <li>
         <def>NightOwl</def>
       </li>
-    </forcedTraits>    
+    </forcedTraits>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>night</symbol></li>
@@ -41,16 +41,16 @@
 
   <GeneDef>
     <defName>TelolXenotype_CognitiveInjuryResponse</defName>
-    <label>congnitive injury response</label>
+    <label>cognitive injury response</label>
     <labelShortAdj>injury response</labelShortAdj>
-    <description>When suffering catastrophical injury, hardcoded congnitive response activates and carrier of this gene adapts.</description>
+    <description>When suffering catastrophic injury, a hardcoded cognitive response activates and the carrier of this gene adapts.</description>
     <iconPath>UI/Icons/Genes/Gene_TelolXenotype_CognitiveInjuryResponse</iconPath>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>60</displayOrderInCategory>
     <biostatCpx>2</biostatCpx>
     <biostatMet>-1</biostatMet>
     <customEffectDescriptions>
-      <li>Pernament injury has chance to grant beneficial survival related trait.</li>
+      <li>Permanent injury has a chance to grant beneficial survival-related trait.</li>
       <li>Traits considered: Nimble, Tough, Quick sleeper, Fast walker, Jogger, Steadfast, Iron-willed, Super-immune. (may include more if extended by mods)</li>
     </customEffectDescriptions>
     <symbolPack>

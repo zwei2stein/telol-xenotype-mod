@@ -4,8 +4,8 @@
   <XenotypeDef>
     <defName>TelolRace_Telol</defName>
     <label>telol</label>
-    <description>Designed to be easily controllable, telol have mulptiple weaknesses. They were desgined to be pests - adaptive, hardy, resistant to dangers of nature, breeding fast and living long - ousting other colonizers from cold planets by atrition. Once that was achieved, they were supposed to be easily wiped out by stopping shipments of drugs and releasing mechanoids with flamethrowers. \n\n While not supposed to able able to mingle and collaborate with outsiders, telol society has easy time keeping peace inside their settlements. \n\n Their exact origins are matter of debate - but lots of signs point to them being part of grand colonization attempt - way to hinder competition. Eventually countered by impid design. Right now, they survive on fringes - planents on rim still occasionally recieve telol settler parties lauched as scouts. \n\n Over time, native telol mutated to be less dependent on drugs.</description>
-    <descriptionShort>Designed to be pests-colonists, telol deal well with dangers of settling new dangerous lands and outcompete others easily. They require constant shipments of smokeleaf to keep them in line and are weak to fire.</descriptionShort>
+    <description>Designed to be easily controllable, Telols have multiple weaknesses. They were designed to be pests - adaptive, hardy, resistant to dangers of nature, breeding fast and living long - ousting other colonizers from cold planets by attrition. Once that was achieved, they were supposed to be easily wiped out by stopping shipments of drugs and releasing mechanoids with flamethrowers. \n\n While not supposed to be able to mingle and collaborate with outsiders, Telol society has an easy time keeping peace inside their settlements. \n\n Their exact origins are a matter of debate - but lots of signs point to them being part of a grand colonization attempt - a way to hinder competition. Eventually countered by flawed design. Right now, they survive on fringes - planets on the rim still occasionally receive Telol settler parties launched as scouts. \n\n Over time, native Telols mutated to be less dependent on drugs.</description>
+    <descriptionShort>Designed to be pest-colonists, Telols deal well with dangers of settling new dangerous lands and outcompete others easily. They require constant shipments of smokeleaf to keep them in line and are weak against fire.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/TelolRace_Telol</iconPath>
     <inheritable>true</inheritable>
     <genes>
@@ -43,5 +43,5 @@
       <li>Skin_Melanin7</li>
     </genes>
   </XenotypeDef>
-  
+
 </Defs>
