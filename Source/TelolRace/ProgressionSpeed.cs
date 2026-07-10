@@ -5,7 +5,7 @@ namespace TelolRace
 {
     public enum ProgressionSpeed : byte
     {
-        SECCOND,
+        SECOND,
         DAY,
         QUADRUM,
         YEAR
@@ -17,7 +17,7 @@ namespace TelolRace
         {
             switch (mode)
             {
-                case ProgressionSpeed.SECCOND:
+                case ProgressionSpeed.SECOND:
                     return "TelolXenotype_ProgressionSpeed_SECOND".Translate();
                 case ProgressionSpeed.DAY:
                     return "TelolXenotype_ProgressionSpeed_DAY".Translate();
@@ -34,7 +34,7 @@ namespace TelolRace
         {
             switch (mode)
             {
-                case ProgressionSpeed.SECCOND:
+                case ProgressionSpeed.SECOND:
                     return 60;
                 case ProgressionSpeed.DAY:
                     return 60000;
