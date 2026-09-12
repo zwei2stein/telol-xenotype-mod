@@ -1,8 +1,6 @@
 using HarmonyLib;
 using RimWorld;
 using System;
-using System.Collections.Generic;
-using RimWorld.Planet;
 using Verse;
 
 namespace TelolRace
@@ -41,42 +39,24 @@ namespace TelolRace
 
             var pawn = __state.Pawn;
 
-            if (pawn.TryGetComp<Gene_CognitiveInjuryResponse>(out var response))
-            {
-                if (response == null)
-                    return;
-                
-                //Log.Message("[TelolXenotype] response.lastTriggerTick=" + response.lastTriggerTick);
-                //Log.Message("[TelolXenotype] Find.TickManager.TicksGame=" + Find.TickManager.TicksGame );
-                //cooldown between injury responses.
-                if (response.lastTriggerTick > -1 && response.lastTriggerTick > Find.TickManager.TicksGame - TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Cooldown.ToTicks())
-                {
-                    //Log.Message("[TelolXenotype] Skipping, too early");
-                    return;
-                }
-            }
-            else
-            {
-                // not human?
+            var response = pawn.genes?.GetFirstGeneOfType<Gene_CognitiveInjuryResponse>();
+            if (response == null || !response.Active)
                 return;
-            }
+
+            if (response.lastTriggerTick > -1 && response.lastTriggerTick > Find.TickManager.TicksGame - TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Cooldown.ToTicks())
+                return;
 
             if (response.traitsGranted >= TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_MaxTraits)
-                // already got max traits.
                 return;
-            
+
             pawn.health.hediffSet.TryGetHediff(HediffDefOf.Anesthetic, out var hediffAnesthetic);
             if (hediffAnesthetic != null)
-            {
                 return;
-                // planned operation is not the right kind of trauma
-            }
 
             Hediff_Injury injury = __state.Injury;
 
-            if (!pawn.health.Dead && pawn.genes.HasActiveGene(TelolXenotypeDefOf.TelolXenotype_CognitiveInjuryResponse))
+            if (!pawn.health.Dead)
             {
-                
                 var permanentInjury = pawn.health.hediffSet.GetPartHealth(injury.Part) <= 0f;
                 var hediffCompPermanent = HediffUtility.TryGetComp<HediffComp_GetsPermanent>(injury);
                 if (hediffCompPermanent != null)
@@ -105,11 +85,10 @@ namespace TelolRace
                             "TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text".Translate(
                                 pawn.Named("PAWN"), selectedTrait.Label.Named("TRAIT"), injury.Part.Label.Named("INJURY")),
                             LetterDefOf.PositiveEvent,
-                            new LookTargets((Thing)(object)pawn));
+                            new LookTargets(pawn));
 
                         Find.LetterStack.ReceiveLetter(letter);
                     }
-                    
                 }
             }
         }

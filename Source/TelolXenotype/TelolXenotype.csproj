@@ -5,7 +5,7 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{C86DD454-1C3A-4580-80CE-3A1065F6F530}</ProjectGuid>
+        <ProjectGuid>{A9521B07-8868-4365-83E8-9ED416BB8444}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>TelolRace</RootNamespace>
@@ -25,6 +25,7 @@
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>false</DebugSymbols>
         <DebugType>pdbonly</DebugType>
         <Optimize>true</Optimize>
         <OutputPath>../../Assemblies</OutputPath>
@@ -59,29 +60,30 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CompProperties_Gene_CognitiveInjuryResponse.cs" />
+        <Compile Include="CognitiveInjuryResponseCache.cs" />
+        <Compile Include="CognitiveInjuryResponseExtension.cs" />
         <Compile Include="ConditionalStatAffecter_InDarknessOutside.cs" />
+        <Compile Include="Gene_CognitiveInjuryResponse.cs" />
         <Compile Include="HarmonyPatches.cs" />
         <Compile Include="ProgressionSpeed.cs" />
-        <Compile Include="TelolMod.cs" />
-        <Compile Include="TelolXenotypeHelper.cs"/>
-        <Compile Include="TelolXenotypeDefOf.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
-        <Compile Include="QuestNode_Root_TelolJoin_WalkIn.cs"/>
-        <Compile Include="QuestNode_Root_TelolPodCrash.cs"/>
-        <Compile Include="CognitiveInjuryResponseExtension.cs" />
+        <Compile Include="QuestNode_Root_TelolJoin_WalkIn.cs" />
+        <Compile Include="QuestNode_Root_TelolPodCrash.cs" />
+        <Compile Include="TelolMod.cs" />
+        <Compile Include="TelolXenotypeDefOf.cs" />
+        <Compile Include="TelolXenotypeHelper.cs" />
         <Compile Include="TelolXenotypeModSettings.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
     </ItemGroup>
+    <ItemGroup>
+      <Content Include="Test\TestModlist.xml" />
+    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
-    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-         Other similar extension points exist, see Microsoft.Common.targets.
-    <Target Name="BeforeBuild">
-    </Target>
     <Target Name="AfterBuild">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="C:\pri\Proton\My files\Code\rimworld_mods\TelolXenotype\Mod\1.6\Assemblies"/>
+        <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFolder="C:\pri\Proton\My files\Code\rimworld_mods\TelolXenotype\Mod\1.6\Assemblies" Condition="Exists('$(TargetDir)$(TargetName).pdb')"/>
     </Target>
-    -->
 
 </Project>

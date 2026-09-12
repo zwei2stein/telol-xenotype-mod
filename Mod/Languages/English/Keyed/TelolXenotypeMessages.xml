@@ -18,10 +18,10 @@
     <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Label>Cognitive injury response</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Label>
     <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Cooldown>Trait application cooldown</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Cooldown>
 
-    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance>Trait application chance</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance>
+    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance>Trait application chance {CHANCE}</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance>
     <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance_Tooltip>Chance that permanent injury will result in trait. Default: 100%.</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance_Tooltip>
 
-    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits>Maximum traits from this gene</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits>
+    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits>Maximum traits from this gene {MAX}</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits>
     <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits_Tooltip>Limits amount of traits that this gene will grant to pawn. Default: 3.</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits_Tooltip>
 
 </LanguageData>

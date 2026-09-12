@@ -60,15 +60,15 @@ namespace TelolRace
             }
             
             TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Chance = listingStandard.SliderLabeled(
-                "TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance".Translate() +
-                TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Chance.ToStringPercent()
-                , TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Chance, 0f, 1f, 0.5f,
+                "TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance".Translate(
+                    TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Chance.ToStringPercent().Named("CHANCE")),
+                TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Chance, 0f, 1f, 0.5f,
                 "TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance_Tooltip".Translate());
             
             TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_MaxTraits = Mathf.RoundToInt(listingStandard.SliderLabeled(
-                "TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits".Translate() +
-                TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_MaxTraits
-                , TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_MaxTraits, 1f, 6f, 0.5f,
+                "TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits".Translate(
+                    TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_MaxTraits.Named("MAX")),
+                TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_MaxTraits, 1f, 6f, 0.5f,
                 "TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits_Tooltip".Translate()));
             
             listingStandard.Outdent(gapWidth);

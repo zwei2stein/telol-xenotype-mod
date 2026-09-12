@@ -45,6 +45,7 @@
     <labelShortAdj>injury response</labelShortAdj>
     <description>When suffering catastrophic injury, a hardcoded cognitive response activates and the carrier of this gene adapts.</description>
     <iconPath>UI/Icons/Genes/Gene_TelolXenotype_CognitiveInjuryResponse</iconPath>
+    <geneClass>TelolRace.Gene_CognitiveInjuryResponse</geneClass>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>60</displayOrderInCategory>
     <biostatCpx>2</biostatCpx>
