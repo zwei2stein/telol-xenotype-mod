@@ -5,6 +5,21 @@ Steam workshop link: <https://steamcommunity.com/sharedfiles/filedetails/?id=370
 
 ## Quick about
 
+
+### Infographic
+
+[Infographics as separate page](/Publishing/features.html)
+
+![](/Publishing/features_01.png)
+
+![](/Publishing/features_02.png)
+
+![](/Publishing/features_03.png)
+
+![](/Publishing/features_04.png)
+
+### Steam mod page info
+
 [Steam blurb text is in this repo](/Publishing/steam.txt)
 
 ![](/Publishing/01_intro.png)

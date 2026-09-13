@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=950">
+    <title>Telol Xenotype Mod - Features</title>
+    <style>
+        /* ===== ROOT STYLES ===== */
+        :root {
+            --bg-primary: #1b2838;
+            --bg-secondary: #2a3441;
+            --bg-tertiary: #35414f;
+            --text-primary: #c6d4df;
+            --text-secondary: #a0a8b0;
+            --text-muted: #6c7680;
+            --accent-color: #d4a76a;
+            --accent-gold: #f5d78e;
+            --border-color: #4a545c;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --row-even: rgba(255, 255, 255, 0.03);
+            --row-odd: rgba(255, 255, 255, 0.01);
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 950px;
+            height: auto;
+            overflow: visible;
+            background: var(--bg-primary);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            line-height: 1.5;
+            min-width: 950px;
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            width: 950px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 30px 0 15px 0;
+            padding: 10px 15px;
+            background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .section-header h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--accent-gold);
+        }
+
+        .section-header .icon {
+            width: 32px;
+            height: 32px;
+            opacity: 0.9;
+        }
+
+        /* ===== TABLES ===== */
+        .feature-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 10px 0;
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--bg-secondary);
+        }
+
+        .feature-table th {
+            background: linear-gradient(180deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 600;
+            text-align: left;
+            padding: 12px 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .feature-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        .feature-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .feature-table tr:nth-child(even) {
+            background: var(--row-even);
+        }
+
+        .feature-table tr:nth-child(odd) {
+            background: var(--row-odd);
+        }
+
+        .feature-table tr:hover {
+            background: rgba(212, 167, 106, 0.1) !important;
+        }
+
+        /* ===== COLUMN: GRAPHIC ===== */
+        .col-graphic {
+            width: 80px;
+            text-align: center;
+            padding: 8px 12px;
+        }
+
+        .col-graphic img {
+            max-width: 64px;
+            max-height: 64px;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+        }
+
+        .col-graphic .icon-small {
+            width: 48px;
+            height: 48px;
+        }
+
+        .col-graphic .icon-large {
+            width: 64px;
+            height: 64px;
+        }
+
+        /* ===== COLUMN: DESCRIPTION ===== */
+        .col-description {
+            width: 350px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .col-description h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--accent-gold);
+            margin-bottom: 4px;
+        }
+
+        .col-description p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .col-description .tag {
+            display: inline-block;
+            font-size: 11px;
+            color: var(--text-muted);
+            background: var(--bg-tertiary);
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-right: 6px;
+            margin-top: 4px;
+        }
+
+        /* ===== COLUMN: COST ===== */
+        .col-cost {
+            width: 180px;
+            font-size: 13px;
+        }
+
+        .col-cost table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .col-cost td {
+            padding: 2px 4px;
+            border: none;
+            text-align: center;
+        }
+
+        .col-cost .cost-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        .col-cost .cost-amount {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .col-cost .no-cost {
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        /* ===== COLUMN: FEATURES ===== */
+        .col-features {
+            width: 320px;
+            font-size: 13px;
+        }
+
+        .col-features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .col-features li {
+            padding: 3px 0;
+            padding-left: 18px;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .col-features li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent-color);
+            opacity: 0.7;
+        }
+
+        .col-features li strong {
+            color: var(--accent-gold);
+        }
+
+        /* ===== SPECIFIC SECTIONS ===== */
+
+        /* Xenotype Section */
+        .xenotype-section .col-description {
+            width: 380px;
+        }
+
+        .xenotype-section .col-features {
+            width: 280px;
+        }
+
+        /* Genes Section */
+        .genes-section .col-graphic {
+            width: 70px;
+        }
+        .genes-section .col-description {
+            width: 320px;
+        }
+        .genes-section .col-cost {
+            width: 160px;
+        }
+        .genes-section .col-features {
+            width: 380px;
+        }
+
+        /* Scenarios Section */
+        .scenarios-section .col-graphic {
+            width: 80px;
+        }
+        .scenarios-section .col-description {
+            width: 300px;
+        }
+        .scenarios-section .col-cost {
+            width: 180px;
+        }
+        .scenarios-section .col-features {
+            width: 370px;
+        }
+
+        /* Factions Section */
+        .factions-section .col-graphic {
+            width: 80px;
+        }
+        .factions-section .col-description {
+            width: 320px;
+        }
+        .factions-section .col-cost {
+            width: 160px;
+        }
+        .factions-section .col-features {
+            width: 370px;
+        }
+
+        /* ===== RESPONSIVE ADJUSTMENTS ===== */
+        @media (max-width: 950px) {
+            html {
+                width: 100%;
+            }
+            body {
+                min-width: 0;
+            }
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border-color);
+            margin: 25px 0;
+            opacity: 0.5;
+        }
+
+        .note {
+            font-size: 11px;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- ============================================
+         SECTION: XENOTYPE
+         ============================================ -->
+    <section class="xenotype-section">
+        <div class="section-header">
+            <img src="../../Mod/Textures/UI/Icons/Xenotypes/TelolRace_Telol.png" alt="" class="icon">
+            <h2>Xenotype</h2>
+        </div>
+
+        <table class="feature-table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Description</th>
+                <th>Features & Stats</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="col-graphic">
+                    <img src="../../Mod/Textures/UI/Icons/Xenotypes/TelolRace_Telol.png" alt="Telol Xenotype" class="icon-large">
+                </td>
+                <td class="col-description">
+                    <h4>Telol</h4>
+                    <p>Designed to be easily controllable, <strong>Telols have multiple weaknesses</strong>. They were designed to be pests - adaptive, hardy, resistant to dangers of nature, breeding fast and living long. They thrive in cold, hostile environments and outcompete other colonizers by attrition.</p>
+                    <p class="note">Requires <strong>Biotech DLC</strong></p>
+                </td>
+                <td class="col-features">
+                    <ul>
+                        <li><strong>Weak against fire</strong> (FireWeakness, FireTerror)</li>
+                        <li><strong>Strong against nature</strong> (Superclotting, Immunity - Strong)</li>
+                        <li>Adaptive and carefull (Fast learning, Slow wound healing)</li>
+                        <li>Aggressive but peaceful internally</li>
+                        <li><strong>Chemical dependency:</strong> Smokeleaf</li>
+                        <li>Extended lifespan (Ageless gene)</li>
+                        <li>High libido, Floppy ears, Pig nose, Smooth tail</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================
+         SECTION: GENES
+         ============================================ -->
+    <section class="genes-section">
+        <div class="section-header">
+            <img src="../../Mod/Textures/UI/Icons/Genes/Gene_TelolXenotype_Nocturnal.png" alt="" class="icon">
+            <h2>Custom Genes</h2>
+        </div>
+
+        <table class="feature-table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Description</th>
+                <th>Costs</th>
+                <th>Features & Stats</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="col-graphic">
+                    <img src="../../Mod/Textures/UI/Icons/Genes/Gene_TelolXenotype_Nocturnal.png" alt="Nocturnal Gene" class="icon-large">
+                </td>
+                <td class="col-description">
+                    <h4>Nocturnal</h4>
+                    <p>Carriers of this gene are adapted to nighttime and being outdoors during night activates their <strong>predatory instincts</strong>.</p>
+                    <span class="tag">Miscellaneous</span>
+                </td>
+                <td class="col-cost">
+                    <table>
+                        <tr>
+                            <td class="cost-amount">1</td>
+                            <td>Complexity</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="cost-amount">1</td>
+                            <td>Metabolism</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <span class="note">Forced Trait: Night Owl</span>
+                </td>
+                <td class="col-features">
+                    <ul>
+                        <li>+25% <strong>Global Work Speed</strong> in darkness outside</li>
+                        <li>+25% <strong>Plant Work Speed</strong> in darkness outside</li>
+                        <li>+50% <strong>Hunting Stealth</strong> in darkness outside</li>
+                        <li>+10% <strong>Move Speed</strong> in darkness outside</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-graphic">
+                    <img src="../../Mod/Textures/UI/Icons/Genes/Gene_TelolXenotype_CognitiveInjuryResponse.png" alt="Cognitive Injury Response Gene" class="icon-large">
+                </td>
+                <td class="col-description">
+                    <h4>Cognitive Injury Response</h4>
+                    <p>When suffering catastrophic injury, a hardcoded cognitive response activates and the carrier of this gene <strong>adapts</strong>.</p>
+                    <span class="tag">Miscellaneous</span>
+                </td>
+                <td class="col-cost">
+                    <table>
+                        <tr>
+                            <td class="cost-amount">2</td>
+                            <td>Complexity</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="cost-amount">-1</td>
+                            <td>Metabolism</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <span class="note">Configurable: Cooldown, Max Traits, Chance</span>
+                </td>
+                <td class="col-features">
+                    <ul>
+                        <li><strong>Permanent injury has a chance to grant beneficial survival-related trait</strong></li>
+                        <li>Possible traits: Nimble, Tough, Quick Sleeper, Fast Walker, Jogger, Steadfast, Iron-Willed, Super-Immune</li>
+                        <li>Can be extended by mods with additional traits</li>
+                        <li><strong>Settings configurable:</strong> Cooldown period, Maximum traits, Activation chance</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================
+         SECTION: SCENARIOS
+         ============================================ -->
+    <section class="scenarios-section">
+        <div class="section-header">
+            <h2>Starting Scenarios</h2>
+        </div>
+
+        <table class="feature-table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Description</th>
+                <th>Costs</th>
+                <th>Features & Stats</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="col-graphic">
+                    <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #4a5c6a 0%, #2a3441 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid var(--accent-color);">
+                        <span style="color: var(--accent-gold); font-size: 24px; font-weight: bold;">6</span>
+                    </div>
+                </td>
+                <td class="col-description">
+                    <h4>Telol Tribe Arrival</h4>
+                    <p><strong>Six naked colonists</strong> trying to survive and thrive. You arrive in drop pods with minimal resources and <strong>no research completed</strong> - not even tribal ones.</p>
+                    <span class="tag">Naked Brutality+</span>
+                </td>
+                <td class="col-cost">
+                    <span class="no-cost">Starts with:</span>
+                    <ul style="list-style: none; padding: 0; margin-top: 5px;">
+                        <li>6x Smokeleaf Joint</li>
+                        <li>5x Ship Chunk</li>
+                    </ul>
+                </td>
+                <td class="col-features">
+                    <ul>
+                        <li><strong>Start with six Telol pawns</strong></li>
+                        <li><strong>Starting Research:</strong> None</li>
+                        <li><strong>Reinforcements arrive over time:</strong></li>
+                        <li style="padding-left: 25px;">First wave: Days 3-5 (Walk-in)</li>
+                        <li style="padding-left: 25px;">Second wave: Days 12-15 (Pod crash)</li>
+                        <li style="padding-left: 25px;">Additional waves: Days 16-60+</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-graphic">
+                    <div style="width: 64px; height: 64px; background: linear-gradient(135deg, #4a5c6a 0%, #2a3441 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid var(--accent-color);">
+                        <span style="color: var(--accent-gold); font-size: 24px; font-weight: bold;">1</span>
+                    </div>
+                </td>
+                <td class="col-description">
+                    <h4>Telol Solo Arrival</h4>
+                    <p><strong>One naked Telol</strong> trying to survive and thrive. You are alone, a thousand years too late. <strong>Reinforcements might come</strong>.</p>
+                    <span class="tag">Naked Brutality+</span>
+                </td>
+                <td class="col-cost">
+                    <span class="no-cost">Starts with:</span>
+                    <ul style="list-style: none; padding: 0; margin-top: 5px;">
+                        <li>2x Smokeleaf Joint</li>
+                        <li>2x Ship Chunk</li>
+                    </ul>
+                </td>
+                <td class="col-features">
+                    <ul>
+                        <li><strong>Start with one Telol pawn</strong></li>
+                        <li><strong>Starting Research:</strong> None</li>
+                        <li><strong>Faster reinforcement schedule:</strong></li>
+                        <li style="padding-left: 25px;">First wave: Days 1-3 (Walk-in)</li>
+                        <li style="padding-left: 25px;">Second wave: Days 2-6 (Pod crash)</li>
+                        <li style="padding-left: 25px;">Additional waves: Days 5-60+</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================
+         SECTION: FACTIONS
+         ============================================ -->
+    <section class="factions-section">
+        <div class="section-header">
+            <h2>Factions</h2>
+        </div>
+
+        <table class="feature-table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Description</th>
+                <th>Features & Stats</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="col-graphic">
+                    <img src="../../Mod/Textures/World/WorldObjects/Expanding/TelolTribe.png" alt="Telol Settler Tribe" class="icon-large">
+                </td>
+                <td class="col-description">
+                    <h4>Telol Settler Tribe</h4>
+                    <p>These people arrived recently, but are spreading fast. They thrive in the wilderness and make good use of its resources. Their numbers and their hardiness are a great asset.</p>
+                </td>
+                <td class="col-features">
+                    <ul>
+                        <li><strong>Xenotype:</strong> 100% Telol</li>
+                        <li><strong>Tech Level:</strong> Neolithic</li>
+                        <li><strong>Culture:</strong> Telolian</li>
+                        <li><strong>Structure Memes:</strong> Proselytizer, High Life</li>
+                        <li>Custom naming schemes for settlements and pawns</li>
+                        <li>Starts hostile to player faction</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-graphic">
+                    <img src="../../Mod/Textures/World/WorldObjects/Expanding/TelolTribePlayer.png" alt="Player Telol Tribe" class="icon-large">
+                </td>
+                <td class="col-description">
+                    <h4>Player Telol Tribe</h4>
+                    <p>A small Telol tribe. <strong>Your starting faction</strong> when using the Telol scenarios.</p>
+                </td>
+                <td class="col-features">
+                    <ul>
+                        <li><strong>Tech Level:</strong> Neolithic</li>
+                        <li><strong>Culture:</strong> Telolian</li>
+                        <li><strong>Starting Research:</strong> None</li>
+                        <li>Custom naming schemes for settlements and pawns</li>
+                        <li>Player Faction</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+</div>
+</body>
+</html>
