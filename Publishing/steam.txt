@@ -34,6 +34,17 @@ I was annoyed that custom xenotype you make for starting pawns is not integrated
 
 So I made this mod to fix that. Feel free to clone it for your own xenotype.
 
+[h2]Mod compatibility[/h2]
+
+[h3]Bonus cognitive injury response gene traits with[/h3]
+
+[list]
+    [*]Roo's Minotaur Xenotype
+    [*]Elders Faction (Continued)
+    [*]Mashed's Ashlands
+    [*]Allergies
+[/list]
+
 [hr][/hr]
 
 [url=https://github.com/zwei2stein/telol-xenotype-mod]Source Code[/url]

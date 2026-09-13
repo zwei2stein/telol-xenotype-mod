@@ -2,12 +2,18 @@
 <LanguageData>
 
     <TelolXenotypeModName>Telol Xenotype</TelolXenotypeModName>
+    
+    <!-- traits -->
 
     <TelolXenotype_StatsReport_InDarknessOutside>Outside in darkness</TelolXenotype_StatsReport_InDarknessOutside>
 
+    
+    <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Description_TraitsConsidered>Traits considered:\n{TRAITS}</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Description_TraitsConsidered>
     <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Title>{PAWN_labelShort} has gained a trait.</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Title>
     <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text>{PAWN_labelShort} suffered permanent injury to {INJURY} and resulting trauma triggered a cognitive injury response, forcing adaptation by becoming {TRAIT}.</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text>
 
+    <!-- settings -->
+    
     <TelolXenotype_ProgressionSpeed_SECOND>Second</TelolXenotype_ProgressionSpeed_SECOND>
     <TelolXenotype_ProgressionSpeed_DAY>Day (default)</TelolXenotype_ProgressionSpeed_DAY>
     <TelolXenotype_ProgressionSpeed_QUADRUM>Quadrum</TelolXenotype_ProgressionSpeed_QUADRUM>

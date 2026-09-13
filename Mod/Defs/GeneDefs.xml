@@ -39,7 +39,7 @@
     </symbolPack>
   </GeneDef>
 
-  <GeneDef>
+  <TelolRace.GeneDef_CognitiveInjuryResponse>
     <defName>TelolXenotype_CognitiveInjuryResponse</defName>
     <label>cognitive injury response</label>
     <labelShortAdj>injury response</labelShortAdj>
@@ -52,8 +52,21 @@
     <biostatMet>-1</biostatMet>
     <customEffectDescriptions>
       <li>Permanent injury has a chance to grant beneficial survival-related trait.</li>
-      <li>Traits considered: Nimble, Tough, Quick sleeper, Fast walker, Jogger, Steadfast, Iron-willed, Super-immune. (may include more if extended by mods)</li>
     </customEffectDescriptions>
+    <traitCandidates>
+      <Nimble />
+      <Tough />
+      <QuickSleeper />
+      <SpeedOffset>1</SpeedOffset>
+      <SpeedOffset>2</SpeedOffset>
+      <Nerves>1</Nerves>
+      <Nerves>2</Nerves>
+      <Immunity>1</Immunity>
+      <RBM_Herculean_Trait MayRequire="tug.minotaur" />
+      <Mashed_Ashlands_AshStormLover MayRequire="zal.eldersfaction" />
+      <NatureHarmony MayRequire="sirmashedpotato.ashlands" />
+      <P42_Allergy MayRequire="phil42.allergies">1</P42_Allergy>
+    </traitCandidates>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>evo</symbol></li>
@@ -66,6 +79,6 @@
         <li><symbol>fix</symbol></li>
       </suffixSymbols>
     </symbolPack>
-  </GeneDef>
+  </TelolRace.GeneDef_CognitiveInjuryResponse>
 
 </Defs>

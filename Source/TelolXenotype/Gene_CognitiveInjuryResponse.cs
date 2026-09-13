@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using RimWorld;
 using Verse;
 
 namespace TelolRace
@@ -13,5 +15,22 @@ namespace TelolRace
             Scribe_Values.Look<int>(ref this.lastTriggerTick, "lastTriggerTick");
             Scribe_Values.Look<int>(ref this.traitsGranted, "traitsGranted");
         }
+        
+        public List<Trait> GetCandidateTraits()
+        {
+            var geneDef = (GeneDef_CognitiveInjuryResponse)def;
+            var candidates = new List<Trait>();
+
+            foreach (var candidate in geneDef.traitCandidates)
+            {
+                if (pawn.story.traits.HasTrait(candidate.trait))
+                    continue;
+
+                candidates.Add(new Trait(candidate.trait, candidate.degree));
+            }
+
+            return candidates;
+        }
+        
     }
 }

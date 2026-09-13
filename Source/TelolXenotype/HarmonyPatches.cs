@@ -34,13 +34,13 @@ namespace TelolRace
 
         public static void Postfix(PawnInjuryData __state)
         {
-            if (!Rand.Chance(TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Chance))
-                return;
-
             var pawn = __state.Pawn;
 
             var response = pawn.genes?.GetFirstGeneOfType<Gene_CognitiveInjuryResponse>();
-            if (response == null || !response.Active)
+            if (response == null)
+                return;
+
+            if (!Rand.Chance(TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Chance))
                 return;
 
             if (response.lastTriggerTick > -1 && response.lastTriggerTick > Find.TickManager.TicksGame - TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Cooldown.ToTicks())
@@ -68,14 +68,14 @@ namespace TelolRace
 
                 if (permanentInjury)
                 {
-                    var candidateTraits = CognitiveInjuryResponseCache.GetCandidateTraits(pawn);
+                    var candidateTraits = response.GetCandidateTraits();
 
                     if (candidateTraits.Count > 0)
                     {
                         var selectedTrait = candidateTraits.RandomElement();
 
                         pawn.story.traits.GainTrait(selectedTrait);
-                        
+
                         response.lastTriggerTick = Find.TickManager.TicksGame;
                         response.traitsGranted++;
 
