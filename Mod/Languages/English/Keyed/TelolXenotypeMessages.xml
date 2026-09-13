@@ -3,6 +3,14 @@
 
     <TelolXenotypeModName>Telol Xenotype</TelolXenotypeModName>
     
+    <!-- quests -->
+
+    <TelolXenotype_Letter_PodCrash_Label>Telol straggler recovered</TelolXenotype_Letter_PodCrash_Label>
+    <TelolXenotype_Letter_PodCrash_Text>A transport pod carrying {PAWN_nameDef} has crashed nearby. {PAWN_pronoun} is one of the Telol from the second wave, wounded but alive. {PAWN_pronoun} is one of our own, we cannot abandon {PAWN_objective}.</TelolXenotype_Letter_PodCrash_Text>
+
+    <TelolXenotype_Letter_WalkIn_Label>A Telol straggler approaches</TelolXenotype_Letter_WalkIn_Label>
+    <TelolXenotype_Letter_WalkIn_Text>{PAWN_nameDef} has walked in from the wilds, one of the Telol from the first wave, and asks to rejoin {PAWN_possessive} people. {PAWN_pronoun} will leave if rejected, joining another faction willing to take {PAWN_objective} in.</TelolXenotype_Letter_WalkIn_Text>
+    
     <!-- traits -->
 
     <TelolXenotype_StatsReport_InDarknessOutside>Outside in darkness</TelolXenotype_StatsReport_InDarknessOutside>

@@ -4,9 +4,10 @@
     <activeMods>
         <li>brrainz.harmony</li>
         <li>ludeon.rimworld</li>
+        <li>ludeon.rimworld.ideology</li>
         <li>ludeon.rimworld.biotech</li>
-        <!--<li>segaswolf.pawneditor.fork</li>-->
-        <li>phil42.allergies</li>
+        <li>segaswolf.pawneditor.fork</li>
+        <!--<li>phil42.allergies</li>-->
         <li>zwei2stein.TelolRace</li>
     </activeMods>
     <knownExpansions>
