@@ -60,9 +60,8 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CognitiveInjuryResponseCache.cs" />
-        <Compile Include="CognitiveInjuryResponseExtension.cs" />
         <Compile Include="ConditionalStatAffecter_InDarknessOutside.cs" />
+        <Compile Include="GeneDef_CognitiveInjuryResponse.cs" />
         <Compile Include="Gene_CognitiveInjuryResponse.cs" />
         <Compile Include="HarmonyPatches.cs" />
         <Compile Include="ProgressionSpeed.cs" />

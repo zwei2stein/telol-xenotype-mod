@@ -1,24 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/TraitDef[defName=&quot;Nimble&quot;]</xpath>
-        <value>
-            <li Class="TelolRace.CognitiveInjuryResponseExtension">
-            </li>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/TraitDef[defName=&quot;Tough&quot;]</xpath>
-        <value>
-            <li Class="TelolRace.CognitiveInjuryResponseExtension">
-            </li>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/TraitDef[defName=&quot;QuickSleeper&quot;]</xpath>
-        <value>
-            <li Class="TelolRace.CognitiveInjuryResponseExtension">
-            </li>
-        </value>
-    </Operation>
+    <!-- content deleted, keeping file to force overwrite by steam -->
 </Patch>

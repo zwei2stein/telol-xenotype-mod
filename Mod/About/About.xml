@@ -18,5 +18,11 @@
             <displayName>Biotech</displayName>
         </li>
     </modDependencies>
+    <loadAfter>
+        <li>tug.minotaur</li>
+        <li>zal.eldersfaction</li>
+        <li>sirmashedpotato.ashlands</li>
+        <li>phil42.allergies</li>
+    </loadAfter>
     <description>Custom Telol xenotype with unique genes, backstories and naming scheme</description>
 </ModMetaData>

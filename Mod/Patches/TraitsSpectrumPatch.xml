@@ -1,30 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/TraitDef[defName=&quot;SpeedOffset&quot;]</xpath>
-        <value>
-            <li Class="TelolRace.CognitiveInjuryResponseExtension">
-                <degreeMin>0</degreeMin>
-                <degreeMax>999</degreeMax>
-            </li>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/TraitDef[defName=&quot;Nerves&quot;]</xpath>
-        <value>
-            <li Class="TelolRace.CognitiveInjuryResponseExtension">
-                <degreeMin>0</degreeMin>
-                <degreeMax>999</degreeMax>
-            </li>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/TraitDef[defName=&quot;Immunity&quot;]</xpath>
-        <value>
-            <li Class="TelolRace.CognitiveInjuryResponseExtension">
-                <degreeMin>0</degreeMin>
-                <degreeMax>999</degreeMax>
-            </li>
-        </value>
-    </Operation>
+    <!-- content deleted, keeping file to force overwrite by steam -->
 </Patch>

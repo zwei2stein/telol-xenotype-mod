@@ -4,21 +4,21 @@
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/FactionDef[defName='PirateWaster']/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <TelolRace_Telol>0.001</TelolRace_Telol>
+            <TelolRace_Telol>0.01</TelolRace_Telol>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/FactionDef[defName='Pirate']/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <TelolRace_Telol>0.001</TelolRace_Telol>
+            <TelolRace_Telol>0.01</TelolRace_Telol>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/FactionDef[@Name='OutlanderFactionBase']/xenotypeSet/xenotypeChances</xpath>
         <value>
-            <TelolRace_Telol>0.001</TelolRace_Telol>
+            <TelolRace_Telol>0.01</TelolRace_Telol>
         </value>
     </Operation>
     
