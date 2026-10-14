@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-
-    <TelolXenotypeModName>Telol Xenotype</TelolXenotypeModName>
     
-    <!-- quests -->
-
-    <TelolXenotype_Letter_PodCrash_Label>Telol straggler recovered</TelolXenotype_Letter_PodCrash_Label>
-    <TelolXenotype_Letter_PodCrash_Text>A transport pod carrying {PAWN_nameDef} has crashed nearby. {PAWN_pronoun} is one of the Telol from the second wave, wounded but alive. {PAWN_pronoun} is one of our own, we cannot abandon {PAWN_objective}.</TelolXenotype_Letter_PodCrash_Text>
-
-    <TelolXenotype_Letter_WalkIn_Label>A Telol straggler approaches</TelolXenotype_Letter_WalkIn_Label>
-    <TelolXenotype_Letter_WalkIn_Text>{PAWN_nameDef} has walked in from the wilds, one of the Telol from the first wave, and asks to rejoin {PAWN_possessive} people. {PAWN_pronoun} will leave if rejected, joining another faction willing to take {PAWN_objective} in.</TelolXenotype_Letter_WalkIn_Text>
+    <!-- moved to 1.6 and 1.7 dirs, keeping file to make steam overwrite it -->
     
-    <!-- traits -->
-
-    <TelolXenotype_StatsReport_InDarknessOutside>Outside in darkness</TelolXenotype_StatsReport_InDarknessOutside>
-
-    
-    <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Description_TraitsConsidered>Traits considered:\n{TRAITS}</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Description_TraitsConsidered>
-    <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Title>{PAWN_labelShort} has gained a trait.</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Title>
-    <TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text>{PAWN_labelShort} suffered permanent injury to {INJURY} and resulting trauma triggered a cognitive injury response, forcing adaptation by becoming {TRAIT}.</TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text>
-
-    <!-- settings -->
-    
-    <TelolXenotype_ProgressionSpeed_SECOND>Second</TelolXenotype_ProgressionSpeed_SECOND>
-    <TelolXenotype_ProgressionSpeed_DAY>Day (default)</TelolXenotype_ProgressionSpeed_DAY>
-    <TelolXenotype_ProgressionSpeed_QUADRUM>Quadrum</TelolXenotype_ProgressionSpeed_QUADRUM>
-    <TelolXenotype_ProgressionSpeed_YEAR>Year</TelolXenotype_ProgressionSpeed_YEAR>
-
-    <TelolXenotype_Settings_Genes_Label>Genes</TelolXenotype_Settings_Genes_Label>
-
-    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Label>Cognitive injury response</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Label>
-    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Cooldown>Trait application cooldown</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Cooldown>
-
-    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance>Trait application chance {CHANCE}</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance>
-    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance_Tooltip>Chance that permanent injury will result in trait. Default: 100%.</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_Chance_Tooltip>
-
-    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits>Maximum traits from this gene {MAX}</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits>
-    <TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits_Tooltip>Limits amount of traits that this gene will grant to pawn. Default: 3.</TelolXenotype_Settings_Genes_CognitiveInjuryResponse_MaxTraits_Tooltip>
-
 </LanguageData>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>TelolRace_Telol</defName>
+    <label>telol</label>
+    <description>Designed to be easily controllable, Telols have multiple weaknesses. They were designed to be pests - adaptive, hardy, resistant to dangers of nature, breeding fast and living long - ousting other colonizers from cold planets by attrition. Once that was achieved, they were supposed to be easily wiped out by stopping shipments of drugs and releasing mechanoids with flamethrowers. \n\n While not supposed to be able to mingle and collaborate with outsiders, Telol society has an easy time keeping peace inside their settlements. \n\n Their exact origins are a matter of debate - but lots of signs point to them being part of a grand colonization attempt - a way to hinder competition. Eventually countered by flawed design. Right now, they survive on fringes - planets on the rim still occasionally receive Telol settler parties launched as scouts. \n\n Over time, native Telols mutated to be less dependent on drugs.</description>
+    <descriptionShort>Designed to be pest-colonists, Telols deal well with dangers of settling new dangerous lands and outcompete others easily. They require constant shipments of smokeleaf to keep them in line and are weak against fire.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/TelolRace_Telol</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Ageless</li>
+      <li>FoamSpray</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_Slow</li>
+      <li>Superclotting</li>
+      <li>PsychicAbility_Dull</li>
+      <li>MoveSpeed_Quick</li>
+      <li>MaxTemp_SmallDecrease</li>
+      <li>FireWeakness</li>
+      <li>FireTerror</li>
+      <li>Aggression_DeadCalm</li>
+      <li>KindInstinct</li>
+      <li>TelolXenotype_Nocturnal</li>
+      <li>TelolXenotype_CognitiveInjuryResponse</li>
+      <li>Pain_Reduced</li>
+      <li>Libido_High</li>
+      <li>Ears_Floppy</li>
+      <li>Voice_Human</li>
+      <li>Body_Standard</li>
+      <li>Hair_Gray</li>
+      <li>Hair_Blonde</li>
+      <li>Hair_LightOrange</li>
+      <li>Hair_DarkSaturatedReddish</li>
+      <li>Hair_DarkReddish</li>
+      <li>Hair_DarkBlack</li>
+      <li>Skin_SlateGray</li>
+      <li>Learning_Fast</li>
+      <li>Nose_Pig</li>
+      <li>Tail_Smooth</li>
+      <li>AptitudePoor_Social</li>
+      <li>ChemicalDependency_Smokeleaf</li>
+      <li>Skin_Melanin7</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>
