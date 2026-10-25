@@ -67,6 +67,21 @@
       <NatureHarmony MayRequire="sirmashedpotato.ashlands" />
       <P42_Allergy MayRequire="phil42.allergies">1</P42_Allergy>
     </traitCandidates>
+    <triggerHediffs>
+      <li MayRequire="zwei2stein.TribalTrophies">
+        <hediff>TribalTrophies_Scalping_Scalped</hediff>
+        <ignoreCooldown>true</ignoreCooldown>
+        <chance>1</chance>
+      </li>
+      <li MayRequire="phil42.allergies">
+        <hediff>P42_AnaphylacticShock</hediff>
+      </li>
+      <li MayRequire="zwei2stein.Kuru">
+        <hediff>KuruMod_Kuru</hediff>
+        <ignoreCooldown>true</ignoreCooldown>
+        <chance>1</chance>
+      </li>
+    </triggerHediffs>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>evo</symbol></li>

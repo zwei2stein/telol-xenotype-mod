@@ -40,15 +40,6 @@ namespace TelolRace
             if (response == null)
                 return;
 
-            if (!Rand.Chance(TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Chance))
-                return;
-
-            if (response.lastTriggerTick > -1 && response.lastTriggerTick > Find.TickManager.TicksGame - TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_Cooldown.ToTicks())
-                return;
-
-            if (response.traitsGranted >= TelolXenotypeModSettings.Gene_CognitiveInjuryResponse_MaxTraits)
-                return;
-
             pawn.health.hediffSet.TryGetHediff(HediffDefOf.Anesthetic, out var hediffAnesthetic);
             if (hediffAnesthetic != null)
                 return;
@@ -68,28 +59,45 @@ namespace TelolRace
 
                 if (permanentInjury)
                 {
-                    var candidateTraits = response.GetCandidateTraits();
-
-                    if (candidateTraits.Count > 0)
-                    {
-                        var selectedTrait = candidateTraits.RandomElement();
-
-                        pawn.story.traits.GainTrait(selectedTrait);
-
-                        response.lastTriggerTick = Find.TickManager.TicksGame;
-                        response.traitsGranted++;
-
-                        var letter = LetterMaker.MakeLetter(
-                            "TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Title".Translate(
-                                pawn.Named("PAWN")),
-                            "TelolXenotype_Gene_TelolXenotype_CognitiveInjuryResponse_Letter_Text".Translate(
-                                pawn.Named("PAWN"), selectedTrait.Label.Named("TRAIT"), injury.Part.Label.Named("INJURY")),
-                            LetterDefOf.PositiveEvent,
-                            new LookTargets(pawn));
-
-                        Find.LetterStack.ReceiveLetter(letter);
-                    }
+                    if (response.TryGrantTrait(false, null, out var selectedTrait))
+                        response.SendLetter(selectedTrait, injury.Part.Label);
                 }
+            }
+        }
+    }
+    
+    [HarmonyPatch(typeof(Pawn_HealthTracker), nameof(Pawn_HealthTracker.AddHediff), new Type[]
+    {
+        typeof(Hediff),
+        typeof(BodyPartRecord),
+        typeof(DamageInfo?),
+        typeof(DamageWorker.DamageResult)
+    })]
+    public class HediffAddedPatch
+    {
+        public static void Postfix(Hediff hediff)
+        {
+            var pawn = hediff.pawn;
+
+            var response = pawn?.genes?.GetFirstGeneOfType<Gene_CognitiveInjuryResponse>();
+            if (response == null)
+                return;
+
+            var trigger = response.FindTrigger(hediff.def);
+            if (trigger == null)
+                return;
+
+            if (pawn.health.Dead)
+                return;
+
+            // not first of its def on this pawn, or add was rejected
+            if (pawn.health.hediffSet.GetFirstHediffOfDef(hediff.def) != hediff)
+                return;
+
+            if (response.TryGrantTrait(trigger.ignoreCooldown, trigger.chance, out var selectedTrait))
+            {
+                var injuryLabel = hediff.Part != null ? hediff.Part.Label : (string)"WholeBody".Translate();
+                response.SendLetter(selectedTrait, injuryLabel);
             }
         }
     }

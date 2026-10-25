@@ -47,6 +47,14 @@ So I made this mod to fix that. Feel free to clone it for your own xenotype.
     [*]Allergies
 [/list]
 
+[h3]Recognizes catastrophic injuries from[/h3]
+
+[list]
+    [*]Allergies
+    [*]Tribal Trophies
+    [*]Kuru Prion Disease
+[/list]
+
 [hr][/hr]
 
 [url=https://github.com/zwei2stein/telol-xenotype-mod]Source Code[/url]
