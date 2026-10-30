@@ -78,8 +78,10 @@
       </li>
       <li MayRequire="zwei2stein.Kuru">
         <hediff>KuruMod_Kuru</hediff>
-        <ignoreCooldown>true</ignoreCooldown>
         <chance>1</chance>
+      </li>
+      <li MayRequire="zwei2stein.Kuru">
+        <hediff>KuruMod_BrainDamage</hediff>
       </li>
     </triggerHediffs>
     <symbolPack>
